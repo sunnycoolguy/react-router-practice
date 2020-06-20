@@ -1,0 +1,12 @@
+body {
+    background-image: url(./images/paper-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    font-family: 'Medieval';
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Medieval';
+    src: local('Medieval'), url(./fonts/Medieval\ Scroll\ of\ Wisdom.ttf) format('truetype');
+}

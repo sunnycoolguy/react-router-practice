@@ -1,0 +1,25 @@
+nav {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.bottom-left, .bottom-right{
+    color: black;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom-left:hover, .bottom-right:hover{
+    background-color: white;
+    cursor: pointer;
+}
