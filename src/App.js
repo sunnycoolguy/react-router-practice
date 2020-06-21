@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import SecondPage from './SecondPage.js';
 import HomePage from './HomePage.js';
 import FirstPage from './FirstPage.js';

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Medieval';
+    src: local('Medieval'), url(./fonts/Medieval\ Scroll\ of\ Wisdom.ttf) format('truetype');
+}
+
 body {
     background-image: url(./images/paper-background.jpg);
     background-repeat: no-repeat;
@@ -6,7 +11,28 @@ body {
     text-align: center;
 }
 
-@font-face {
-    font-family: 'Medieval';
-    src: local('Medieval'), url(./fonts/Medieval\ Scroll\ of\ Wisdom.ttf) format('truetype');
+nav {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.bottom-left, .bottom-right{
+    color: black;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom-left:hover, .bottom-right:hover{
+    background-color: white;
+    cursor: pointer;
 }
