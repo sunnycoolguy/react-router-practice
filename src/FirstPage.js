@@ -28,6 +28,11 @@ class FirstPage extends React.Component {
                     isAnswered: true,
                     isRight: true
                 });
+            } else {
+                this.setState({
+                    isAnswered: true,
+                    isRight: false
+                });
             }
         }
     }
@@ -37,6 +42,7 @@ class FirstPage extends React.Component {
                 <p>The first page awaits your answer. As soon as you know, enter it in the form below</p>
                 <input type='text' value={this.state.text} onChange={this.handleChange} onKeyDown={this.handleKeyDown}/>
                 <p style={{display: this.state.isAnswered && this.state.isRight ? "block" : "none"}}>You have solved The Riddle!</p>
+                <p style={{display: this.state.isAnswered && !this.state.isRight ? "block" : "none"}}>Your answer is incorrect</p>
                 <Link to='/'>
                     <p className='bottom-right'>To the home page</p>
                 </Link>
